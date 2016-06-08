@@ -6,7 +6,7 @@ First step should always be to take your mockups and plan out all the different 
 
 Second step should be to determine which components need to be upgraded to containers. Containers have direct access to the Redux store.
 
-React components are responsible for calling action creators either through user events or programatically. 
+React components are responsible for calling action creators either through user events or programatically. Containers need to be able to call action creators which means it needs to be able to reach out to Redux. You can bind action creators to a container as a property of that container. In order to connect an action creator to a container ...
 
 The SearchBar needs to have the ability to modify the state of our application by dispatching actions (call an action creator).
 
