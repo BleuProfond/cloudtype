@@ -1,6 +1,6 @@
-With Redux we need to centralize all our logic into actions and reducers as much as possible.
+With Redux we need to centralize all our logic into actions and reducers as much as possible. We only change our application state through our reducers and actions. 
 
-React components should never be making ajax requests. We rely on Redux to do that for us.
+React components should never be making ajax requests. We rely on Redux to do that for us. Action creators are responsible for making ajax requests. Action creators always have to return an action. An action is an object that always has a 'type' property that is the minimal representation of a change to the applciation state. Actions can also be passed with an optional 'payload' key with additional data that describes this specific action.
 
 First step should always be to take your mockups and plan out all the different React components that will be needed.
 
@@ -14,3 +14,5 @@ Whenever you pass a callback function that references 'this'; you need to bind t
 eg. this.callBackFunction = this.callBackFunction.bind(this);
 
 When using a form tag in a single page application, it is neccesary to prevent default on submit so that the page does not entirely refresh itself everytime a user triggers a submit event.
+
+Make sure to use back ticks when making use of template strings in ES6.
