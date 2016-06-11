@@ -1,20 +1,39 @@
-With Redux we need to centralize all our logic into actions and reducers as much as possible. We only change our application state through our reducers and actions. 
+##CloudType
 
-React components should never be making ajax requests. We rely on Redux to do that for us. Action creators are responsible for making ajax requests. Action creators always have to return an action. An action is an object that always has a 'type' property that is the minimal representation of a change to the applciation state. Actions can also be passed with an optional 'payload' key with additional data that describes this specific action.
+A front end weather forecast application that gives you the average temperature, pressure and humidity for the next five days in any Canadian City. 
 
-First step should always be to take your mockups and plan out all the different React components that will be needed.
+The app is built with a [Node.js][node] framework and React.js plus Redux to manage the views and data. The weather data is accessed through the [Open Weather Map API][0PM].
 
-Second step should be to determine which components need to be upgraded to containers. Containers have direct access to the Redux store.
+###Installation Insctructions
 
-React components are responsible for calling action creators either through user events or programatically. Containers need to be able to call action creators which means it needs to be able to reach out to Redux. You can bind action creators to a container as a property of that container. A dispatched action will always flow through middlewares before it reaches any reducers. These middlewares can potentially manipulate the action before it reaches the reducers. 
+1. Both [Git][git] and [Node.js][node] installed.
+2. On your terminal run the following command
+ > git clone https://github.com/BleuProfond/cloudtype.git
+3. cd into the cloudtype root folder and run the following command
+ > npm install
+ > npm start
+4. Visit [localhost:8080](localhost:8080) to start the application.
 
-If you send a promise is a payload, redux-promise can stop the action in it's tracks, allow the promise to resolve and then replace the action with one of the same type, but with the response of the resolved promise as the payload. 
+####General Notes on React.js and Redux
 
-The SearchBar needs to have the ability to modify the state of our application by dispatching actions (call an action creator).
+ The first step when creacting an application with React should always be to take your mockups and plan out all the different components(modular views) that will be needed.
 
-Whenever you pass a callback function that references 'this'; you need to bind the context.
-eg. this.callBackFunction = this.callBackFunction.bind(this);
+ The second step should be to determine what components need to be upgraded to containers. Containers have direct access to the Redux store; which holds the entire state tree of the application.
 
-When using a form tag in a single page application, it is neccesary to prevent default on submit so that the page does not entirely refresh itself everytime a user triggers a submit event.
+ With Redux we need to centralize all our application's logic into actions and reducers as much as possible. Application state(the fluid data represented through the UI) only ever changes through our reducers and actions and we need to centralize all our logic here.
 
-Make sure to use back ticks when making use of template strings in ES6.
+#####Actions 
+
+ React components are responsible for calling action creators either through user events or programatically. Containers need to be able to call action creators to reach out to the Redux store. You can bind action creators to a container as a class property. 
+
+ Actions are plain JavaScript objects that represent the minimal change to your application state. An action always has a 'type' property describing the change and an optional 'payload' key with additional data for the new peice of application state.
+
+#####MiddleWares
+
+ A dispatched action will always flow through middlewares before it reaches any reducers. These middlewares can potentially manipulate the action before it reaches the reducers. 
+
+ If you send a promise as a payload, redux-promise can stop the action in it's tracks, allow the promise to resolve and then replace the action with one of the same type, but with the response of the resolved promise as the payload. 
+
+[node]:(https://nodejs.org/en/)
+[git]:(https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+[OPM]:(https://openweathermap.org)
