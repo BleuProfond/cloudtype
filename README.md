@@ -6,18 +6,18 @@ The app is built with a [Node.js][node] framework and React.js plus Redux to man
 
 ###Installation Insctructions
 
-1. Both [Git][git] and [Node.js][node] installed.
+1. Both [Git][git] and [Node.js][node] need to be installed to run this development build.
 2. On your terminal run the following command
 
  > git clone https://github.com/BleuProfond/cloudtype.git
 
-3. cd into the cloudtype root folder and run the following command
+3. Through your terminal cd into the CloudType root folder and run the following command
 
  > npm install
 
  > npm start
 
-4. Visit [localhost:8080](localhost:8080) to start the application.
+4. Visit [localhost:8080](https://localhost:8080) to start the application.
 
 ####General Notes on React.js and Redux
 
