@@ -2,11 +2,11 @@
 
 A front end weather forecast application that gives you the average temperature, pressure and humidity for the next five days in any Canadian City. 
 
-The app is built with a [Node.js][node] framework and React.js plus Redux to manage the views and data. The weather data is accessed through the [Open Weather Map API][0PM].
+The app is built with a [Node.js](https://nodejs.org/en/) framework and React.js plus Redux to manage the views and data. The weather data is accessed through the [Open Weather Map API][(https://openweathermap.org).
 
 ###Installation Insctructions
 
-1. Both [Git][git] and [Node.js][node] need to be installed to run this development build.
+1. Both [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Node.js](https://nodejs.org/en/) need to be installed to run this development build.
 2. On your terminal run the following command
 
  > git clone https://github.com/BleuProfond/cloudtype.git
@@ -40,5 +40,5 @@ The app is built with a [Node.js][node] framework and React.js plus Redux to man
  If you send a promise as a payload, redux-promise can stop the action in it's tracks, allow the promise to resolve and then replace the action with one of the same type, but with the response of the resolved promise as the payload. 
 
 [node]:(https://nodejs.org/en/)
-[git]:(https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-[OPM]:(https://openweathermap.org)
+[git]:
+[OPM]:
