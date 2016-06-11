@@ -2,7 +2,7 @@
 
 A front end weather forecast application that gives you the average temperature, pressure and humidity for the next five days in any Canadian City. 
 
-The app is built with a [Node.js](https://nodejs.org/en/) framework and React.js plus Redux to manage the views and data. The weather data is accessed through the [Open Weather Map API][(https://openweathermap.org).
+The app is built with a [Node.js](https://nodejs.org/en/) framework and React.js plus Redux to manage the views and data. The weather data is accessed through the [Open Weather Map API](https://openweathermap.org).
 
 ###Installation Insctructions
 
