@@ -21,7 +21,7 @@ The app is built with a [Node.js](https://nodejs.org/en/) framework and React.js
 
 ####General Notes on React.js and Redux
 
- The first step when creacting an application with React should always be to take your mockups and plan out all the different components(modular views) that will be needed.
+ ...The first step when creacting an application with React should always be to take ...your mockups and plan out all the different components(modular views) that will be ...needed.
 
  The second step should be to determine what components need to be upgraded to containers. Containers have direct access to the Redux store; which holds the entire state tree of the application.
 
