@@ -9,13 +9,13 @@ The app is built with a [Node.js](https://nodejs.org/en/) framework and React.js
 1. Both [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Node.js](https://nodejs.org/en/) need to be installed to run this development build.
 2. On your terminal run the following command
 
- > git clone https://github.com/BleuProfond/cloudtype.git
+ > $ git clone https://github.com/BleuProfond/cloudtype.git
 
 3. Through your terminal cd into the CloudType root folder and run the following command
 
- > npm install
+ > $ npm install
 
- > npm start
+ > $ npm start
 
 4. Visit [localhost:8080](https://localhost:8080) to start the application.
 
