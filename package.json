@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BleuProfond/cloudtype.git"
+    "url": "git+https://github.com/PierreDV/cloudtype.git"
   },
   "author": "",
   "license": "ISC",
@@ -37,7 +37,7 @@
     "redux-promise": "^0.5.3"
   },
   "bugs": {
-    "url": "https://github.com/BleuProfond/cloudtype/issues"
+    "url": "https://github.com/PierreDV/cloudtype/issues"
   },
-  "homepage": "https://github.com/BleuProfond/cloudtype#readme"
+  "homepage": "https://github.com/PierreDV/cloudtype#readme"
 }
